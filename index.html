@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Marksheet</title>
+ 
+ 		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+
+<body>
+<div class="container">
+
+
+
+<div id="student_info">
+	<p>Bangladesh Technical Education Board, Dhaka</p> <br/>
+	<p>ACADEMIC TRANSCRIPT of Nehal Hasnin Refath</p>
+	<p>HIGHER SECONDARY CERTIFICATE (BUSINESS MANAGEMENT) EXAMINATION, 2008</p> <br/>
+
+
+	<form action="" method="post">
+        <table border="0" width="75%">
+
+
+
+            <tr><td>Group/Trade &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:
+            	<select name="group" id="">
+                    <option value="">Select your Group</option>
+                    <option value="1">Science Group</option>
+                    <option value="2">Humanities Group</option>
+                </select>
+
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Year :
+            	<select>
+                    <option value="">Year</option>
+                    <option value="1">2019</option>
+                    <option value="2">2020</option>
+                    <option value="2">2021</option>
+                    <option value="2">2022</option>
+                    <option value="2">2023</option>
+                    <option value="2">2024</option>
+                    <option value="2">2025</option>
+                </select>
+            </td>
+        	</tr>
+
+
+
+
+           	<tr><td>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text" size="40" id="a"/></td></tr>
+
+            <tr><td>Father's Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text" size="40" id="a"/></td></tr>
+            
+            <tr><td>Mother's Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text" size="40" id="a"/></td></tr>
+
+            <tr><td>Roll Number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text" size="40" id="a"/></td></tr>
+
+            <tr><td>Registration Number : <input type="text" size="40" id="a"/></td></tr>
+
+            <tr><td>Year/Session &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text" size="40" id="a"/></td></tr>
+
+            <tr><td>Institute Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text" size="80" id="a"/></td></tr> 
+
+            <!-- <tr><td><img src="img/1.jpg" width="100" height="100"></td> <br/><td><input type="file" name="Photo"></td></tr> -->
+		</table>
+		
+        
+		<table align="center" border="1" width="20%">
+        	<tr><td align="center">Rang of Marks</td><td align="center">Grade</td><td align="center">Point</td></tr>
+        	<tr><td align="center">80 and above</td><td align="center">A+</td><td align="center">5.0</td></tr>
+        	<tr><td align="center">70 to 79</td><td align="center">A</td><td align="center">4.0</td></tr>
+        	<tr><td align="center">60 to 69</td><td align="center">A-</td><td align="center">3.50</td></tr>
+        	<tr><td align="center">50 to 59</td><td align="center">B</td><td align="center">3.0</td></tr>
+        	<tr><td align="center">40 to 49</td><td align="center">C</td><td align="center">2.0</td></tr>
+        	<tr><td align="center">33 to 39</td><td align="center">D</td><td align="center">1.0</td></tr>
+        	<tr><td align="center">0 to 32</td><td align="center">F</td><td align="center">0.0</td></tr>
+		</table>        
+    </form>
+</div>
+
+
+            <form action="" method="post">
+            <table border="1" width="100%">
+            
+                <tr>
+                 <th>Subject</th><th>Marks</th><th>Latter Grade</th><th>Grade Point</th>
+                </tr>
+
+
+                <tr><td>Bangla</td><td align="center"><input type="text" size="10" id="ban" onkeyup="getMarks(this.value, 'lg_bangla', 'gpa_bangla')" /></td><td align="center" id="lg_bangla">Latter Grade</td><td align="center" id="gpa_bangla">Grade Point</td></tr>
+
+                <tr><td>English</td><td align="center"><input type="text" size="10" id="eng" onkeyup="getMarks(this.value, 'en', 'en_gp')" /></td><td align="center" id="en">Latter Grade</td><td align="center" id="en_gp">Grade Point</td></tr>
+
+
+ <tr><td>English 2</td><td align="center"><input type="text" size="10" id="eng2" onkeyup="getMarks(this.value, 'en2', 'en_gp2')" /></td><td align="center" id="en2">Latter Grade</td><td align="center" id="en_gp2">Grade Point</td></tr>
+
+
+
+                <tr><td>Business Geography</td><td align="center"><input type="text" size="10" id="busg" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><td>Business Statistics</td><td align="center"><input type="text" size="10" id="buss" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><td>Business Communication</td><td align="center"><input type="text" size="10" id="busc" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><td>Computer Operation & Spreadsheet Analysis</td><td align="center"><input type="text" size="10" id="com" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><td>Office Management</td><td align="center"><input type="text" size="10" id="offm" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><td>Economics</td><td align="center"><input type="text" size="10" id="eco" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><td>Principles & Methods of Management</td><td align="center"><input type="text" size="10" id="prin" /></td><td align="center">Latter Grade</td><td align="center">Grade Point</td></tr>
+
+                <tr><th colspan="2">Average GPA:</th><th id="AVG_GP">Latter Grade</th><th id="total_GPA">Grade Point</th></tr>
+            </table>
+            </form>
+            
+
+
+-->
+            <center>
+             <button onclick="total()">Save</button> &nbsp; <span id="result"></span> <button onclick="cal()">Next</button> &nbsp; <button onclick="cal()">View</button>       
+            </center>
+		</div>
+         
+         <div class="rs" id="result_new">
+         	
+         </div>
+
+
+	</body>
+
+	<script src="js/script.js" ></script>
+
+</html>

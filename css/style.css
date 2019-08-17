@@ -1,0 +1,36 @@
+.container{
+	width: 980px;
+	margin: 0 auto;
+	background-image: url(../img/4.jpeg);
+}
+
+
+
+
+#student_info table{
+	float: left;
+	border-collapse: 10px;
+}
+
+
+#student_info p{
+	margin: 1px;
+	color: green;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+.box{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background-color: red;
+	margin: 10px 0px;
+}
+
+#box{
+
+	transform: rotate(45deg);
+}
